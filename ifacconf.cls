@@ -16,7 +16,7 @@
 %% For distribution of the original source see the terms
 %% for copying and modification in the file pergamon.dtx.
 %% 
-\def\filedate{2007/05/31}
+\def\filedate{2008/04/14}
 \def\fileversion{3.2ModD}
 \def\@journal{IFAC conferences}
 \def\@shortjnl{ifacconf}
@@ -1615,7 +1615,7 @@ et\or eu\or ew\or ex\or ey\or ez\else\@ctrerr\fi}
 \def\@articletypesize{\normalsize}
 \def\@historysize{\normalsize}
 \def\@keywordsize{\normalsize}
-\def\@keywordheading{Keywords: }
+\def\@keywordheading{{\itshape Keywords: }}
 \def\abstractname{{\bfseries {Abstract: }}}  % Abstract Bold PMISRA 2007-05-30
 \def\@bibliosize{\normalsize}
 \historyprefix{(\bgroup \itshape}
@@ -1687,7 +1687,8 @@ et\or eu\or ew\or ex\or ey\or ez\else\@ctrerr\fi}
 \AtBeginDocument{%
 \@ifpackageloaded{harvard}{}{
   \RequirePackage{natbib}
-  \bibliographystyle{plainnat}
+  %\bibliographystyle{plainnat}
+  \bibliographystyle{ifacconf}
 }}
 \@bsphack
 \AtEndDocument
