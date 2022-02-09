@@ -1,11 +1,12 @@
 %===============================================================================
-% $Id: ifacconf.tex 9 2008-04-14 16:04:25Z jpuente $
+% $Id: ifacconf.tex 19 2011-10-27 09:32:13Z jpuente $  
 % Template for IFAC meeting papers
 % Copyright (c) 2007-2008 International Federation of Automatic Control
 %===============================================================================
 \documentclass{ifacconf}
 
 \usepackage{graphicx}      % include this line if your document contains figures
+\usepackage{natbib}        % required for bibliography
 %===============================================================================
 \begin{document}
 \begin{frontmatter}
@@ -192,16 +193,17 @@ information on this will be made available on IFAC website.
 
 Use SI as primary units. Other units may be used as secondary units
 (in parentheses). This applies to papers in data storage. For example,
-write ``$15 Gb/cm^2$ ($100 Gb/in^2$)''. An exception is when
+write ``$15\,\mathrm{Gb}/\mathrm{cm}^2$ ($100\,\mathrm{Gb}/\mathrm{in}^2$)''. 
+An exception is when
 English units are used as identifiers in trade, such as ``3.5 in
 disk drive''. Avoid combining SI and other units, such as current in
 amperes and magnetic field in oersteds. This often leads to confusion
 because equations do not balance dimensionally. If you must use mixed
 units, clearly state the units for each quantity in an equation.  The
-SI unit for magnetic field strength H is A/m. However, if you wish to
-use units of $T$, either refer to magnetic flux density $B$ or
-magnetic field strength symbolized as $\mu_0 H$. Use the center dot to
-separate compound units, e.g., ``$A\cdot m^2$''.
+SI unit for magnetic field strength $\mathbf{H}$ is $\mathrm{A}/\mathrm{m}$. However, if you wish to
+use units of $\mathrm{T}$, either refer to magnetic flux density $\mathbf{B}$ or
+magnetic field strength symbolized as $\mu_0\,\mathbf{H}$. Use the center dot to
+separate compound units, e.g., ``$\mathrm{A} \cdot \mathrm{m}^2$''.
 
 \section{Helpful Hints}
 
@@ -211,14 +213,15 @@ Figure axis labels are often a source of confusion. Use words rather
 than symbols. As an example, write the quantity ``Magnetization'', or
 ``Magnetization M'', not just ``M''. Put units in parentheses. Do not
 label axes only with units.  For example, write ``Magnetization
-($A/m$)'' or ``Magnetization ($A m^{-1}$)'', not just ``$A/m$''. Do not
+($\mathrm{A}/\mathrm{m}$)'' or ``Magnetization ($\mathrm{A} \mathrm{m}^{-1}$)'', not just
+ ``$\mathrm{A}/\mathrm{m}$''. Do not
 label axes with a ratio of quantities and units. For example, write
-``Temperature (K)'', not ``Temperature/K''.
+``Temperature ($\mathrm{K}$)'', not ``$\mbox{Temperature}/\mathrm{K}$''.
 
 Multipliers can be especially confusing. Write ``Magnetization
-(kA/m)'' or ``Magnetization ($10^3$ A/m)''. Do not write
-``Magnetization (A/m)$\times$1000'' because the reader would not know
-whether the axis label means 16000 A/m or 0.016 A/m. 
+($\mathrm{kA}/\mathrm{m}$)'' or ``Magnetization ($10^3 \mathrm{A}/\mathrm{m}$)''. Do not write
+``Magnetization $(\mathrm{A}/\mathrm{m}) \times 1000$'' because the reader would not know
+whether the axis label means $16000\,\mathrm{A}/\mathrm{m}$ or $0.016\,\mathrm{A}/\mathrm{m}$.
 
 \subsection{References}
 
